@@ -12,6 +12,14 @@ public class SingleObjectFactory {
 
     private volatile Singleton so;
 
+    /**
+     * DCL(Double Check Lock)作用
+     * 1.懒加载
+     * 2.减小锁粒度
+     *
+     * 本地变量作用  提升性能
+     * @return
+     */
     public Singleton getInstance() {
         Singleton lso = so;
         if (null == lso) {
