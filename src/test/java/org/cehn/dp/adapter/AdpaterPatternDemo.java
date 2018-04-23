@@ -1,4 +1,4 @@
-package org.cehn.dp;
+package org.cehn.dp.adapter;
 
 import org.cehn.dp.adapter.AudioPlayer;
 
